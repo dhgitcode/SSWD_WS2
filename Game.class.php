@@ -11,11 +11,13 @@ class Game{
     public function listGuesses(){
         //stub
     }
-public function guessHandler(){
+    public function guessHandler(){
     $guess = newNumberGenerator();
     $currentGuess = $guess->makeAGuess();
     $this_>saveGuess($currentGuess);
     return$currentGuess;
     
+
 }
 }
+?>
