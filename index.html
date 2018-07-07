@@ -1,0 +1,26 @@
+<?php
+
+include('NumberGenerator.class.php');
+include ('Dice.class.php');
+
+$dice = new Dice();
+$guess = new NumberGenerator();
+
+$dice->throwDice();
+$numberWereTringToGuess - $dice -> getFaceValue();
+
+for ($i=0; $i<=2; $i++){
+    $nextGuess = $guess->makeAGuess();
+
+
+    if ($nextGuess == $numberWereTringToGuess){
+        echo "Guess number ".($i+1)." was correct!!!";
+    }
+    else{
+        echo 'FV was ' . $numberWereTringToGuess . '<br/>';
+        echo 'Guess was ' . $nextGuess . '<br/>';
+    }
+}
+
+
+?>
